@@ -232,7 +232,7 @@ if __name__ == '__main__':
     print('*' * 30, 'pyltp')
     print([(w, t) for w, t in zip(words, tags)])
     print('*' * 30, 'jieba')
-    print([(w, t) for w, t in res])
+    print([{w, t} for w, t in res])
 
 
 

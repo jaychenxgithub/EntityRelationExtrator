@@ -63,7 +63,7 @@ def db_to_local():
 
 
 def fetch_data_from_file():
-    with open('example.json', 'r', encoding='utf8') as f:
+    with open('./data/example.json', 'r', encoding='utf8') as f:
         ret = json.load(f)
     return ret
 
