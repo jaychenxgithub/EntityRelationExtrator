@@ -8,9 +8,15 @@ from tqdm import tqdm
 #              password="123456"
 #         )
 
+# graph = Graph(
+#             "http://119.81.253.117:7474",
+#              username="neo4j",
+#              password="1qaz2wsx"
+#         )
+
 
 class NeoManager:
-    def __init__(self, host='http://10.214.193.166:7474', username="neo4j", password="123456"):
+    def __init__(self, host='http://119.81.253.117:7474', username="neo4j", password="1qaz2wsx"):
         self.graph = Graph(host, username=username, password=password)
         self.entity2node = dict([(n['name'], n) for n in self.graph.nodes.match()])
 
