@@ -2,19 +2,19 @@ from pyltp import Postagger
 from pyltp import Segmentor
 import os
 from tqdm import tqdm
-LTP_DATA_DIR = '/Users/dyh/NLP/ltp_data'
+LTP_DATA_DIR = './ltp_data_v3.4'
 # LTP_DATA_DIR = '/home/dyh/dataset/ltp_data'
 par_model_path = os.path.join(LTP_DATA_DIR, 'parser.model')  # 依存句法分析模型路径，模型名称为`parser.model`
 ner_model_path = os.path.join(LTP_DATA_DIR, 'ner.model')  # 命名实体识别模型路径，模型名称为`pos.model`
 pos_model_path = os.path.join(LTP_DATA_DIR, 'pos.model')  # 词性标注模型路径，模型名称为`pos.model`
 cws_model_path = os.path.join(LTP_DATA_DIR, 'cws.model')
 
-path_lexicon = './lexicon'
-path_company = '/Users/dyh/NLP/Company-Names-Corpus/Company-Names-Corpus（480W）.txt'
-path_short = '/Users/dyh/NLP/Company-Names-Corpus/Company-Shorter-Form.txt'
-path_org = '/Users/dyh/NLP/Company-Names-Corpus/Organization-Names-Corpus（110W）.txt'
-path_name_cn = '/Users/dyh/NLP/Chinese-Names-Corpus/Chinese_Names_Corpus（120W）.txt'
-path_name_en_cn = '/Users/dyh/NLP/Chinese-Names-Corpus/English_Cn_Name_Corpus（48W）.txt'
+path_lexicon = './data/lexicon'
+path_company = './data/Company-Names-Corpus（480W）.txt'
+path_short = './data/Company-Shorter-Form（28W）.txt'
+path_org = './data/Organization-Names-Corpus（110W）.txt'
+path_name_cn = './data/Chinese_Names_Corpus（120W）.txt'
+path_name_en_cn = './data/English_Cn_Name_Corpus（48W）.txt'
 
 comany_names = {'nz', 'nh', 'j', 'ni'}
 
