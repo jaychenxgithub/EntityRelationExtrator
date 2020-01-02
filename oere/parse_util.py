@@ -219,7 +219,9 @@ if __name__ == '__main__':
     segmentor.load_with_lexicon(cws_model_path, './data/lexicon')
     postagger.load_with_lexicon(pos_model_path, './data/lexicon')
 
+    # 张忠谋 台积电
     string = "公司总会，張忠謀在台積電退休。"
+    #string = "公司总会，张忠谋在台积电退休。"
     words = [w for w in segmentor.segment(string)]
     tags = postagger.postag(words)
 
