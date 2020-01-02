@@ -360,6 +360,10 @@ def extract_all(data):
     data = [(i, news) for i, news in zip(range(len(data)), data)]
     for d in tqdm(data):
         output += extract(d, parse_util)
+
+    with open('./data/output.json', 'w', encoding='utf8') as f:
+        json.dump(output, f, ensure_ascii=False)
+
     return output
 
 
